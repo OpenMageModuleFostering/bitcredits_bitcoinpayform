@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <frontend>
+        <layout>            
+            <updates>
+                <bitcredits_bitcoinpayform>
+                    <file>bitcredits_bitcoinpayform.xml</file>
+                </bitcredits_bitcoinpayform>
+            </updates>
+        </layout>
+    </frontend>
+
+    <modules>
+        <BitCredits_BitcoinPayform>
+            <version>1.0.0</version>
+        </BitCredits_BitcoinPayform>
+    </modules>
+
+    <global>
+        <blocks>
+            <bitcredits_bitcoinpayform>
+                <class>BitCredits_BitcoinPayform_Block</class>
+            </bitcredits_bitcoinpayform>
+        </blocks>
+
+        <models>
+            <bitcredits_bitcoinpayform>
+                <class>BitCredits_BitcoinPayform_Model</class>
+            </bitcredits_bitcoinpayform>
+        </models>
+
+        <resources>
+            <bitcredits_bitcoinpayform_setup>
+                <setup>
+                    <module>BitCredits_BitcoinPayform</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </bitcredits_bitcoinpayform_setup>
+            <bitcredits_bitcoinpayform_write>
+                <connection>
+                  <use>core_write</use>
+                </connection>
+            </bitcredits_bitcoinpayform_write>
+            <bitcredits_bitcoinpayform_read>
+               <connection>
+                <use>core_read</use>
+              </connection>
+            </bitcredits_bitcoinpayform_read>
+        </resources>
+
+    </global>
+
+    <default>
+        <payment>
+            <bitcredits_bitcoinpayform>
+                <active>1</active>
+                <model>bitcredits_bitcoinpayform/paymentMethod</model>
+                <title>Bitcoins through BitCredits.io</title>
+                <api_key></api_key>
+                <api_endpoint>https://api.bitcredits.io</api_endpoint>
+                <payment_action>authorize</payment_action>
+            </bitcredits_bitcoinpayform>
+         </payment>
+    </default>
+
+</config>

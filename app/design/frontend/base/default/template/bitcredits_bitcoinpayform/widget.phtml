@@ -1,0 +1,29 @@
+<div id="bitcredits-payment-zone" style="padding:10px;" class="clear">
+	<style scoped>
+		#bitcredits-payment-box{
+			float:right;
+		}
+	</style>
+	<div id="bitcredits-payment-box" style="opacity:0.7;">Loading Bitcoin payment...</div>
+</div>
+<?php $data = Mage::getSingleton('checkout/session')->getQuote()->getData(); ?>
+<script type="text/javascript">
+//<![CDATA[
+if (document.getElementById("BitC") == null) {
+	var bitc=document.createElement('script');
+	bitc.type='text/javascript';
+	bitc.setAttribute("id", "BitC");
+	bitc.src = '<?php echo Mage::getStoreConfig('payment/bitcredits_bitcoinpayform/api_endpoint'); ?>/v1/bitcredits.js';
+	var s=document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(bitc,s);
+}
+window.BitCredits = window.BitCredits || [];
+window.BitCredits.push(['onConfigReady', function(){
+	window.BitCredits.push(['setupMagento', <?php $quoteData = $this->getQuote()->getData();echo $quoteData['grand_total']; ?>, <?php echo json_encode(array(
+		'email' => $data['customer_email'],
+		'firstname' => $data['customer_firstname'],
+		'lastname' => $data['customer_lastname']
+	)); ?>]);
+}]);
+//]]>
+</script>
