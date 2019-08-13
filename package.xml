@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>BitCredits_BitcoinPayForm</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/MIT">MIT License</license>
     <channel>community</channel>
     <extends/>
     <summary>Accept Bitcoins on your store</summary>
     <description>BitCredits.io allows your store to offer bitcoins as a payment option, while never having to hold them yourself. We take care of the legalities related to crypto-currencies.</description>
-    <notes>Now supporting guest checkout</notes>
+    <notes>Changed some wording</notes>
     <authors><author><name>BitCredits.io</name><user>bitcredits</user><email>admin@bitcredits.io</email></author></authors>
     <date>2014-03-20</date>
-    <time>14:29:39</time>
-    <contents><target name="magecommunity"><dir name="BitCredits"><dir name="BitcoinPayform"><dir name="Block"><file name="Form.php" hash="063a3650c3de39e13ea373c4fa85d480"/><file name="Widget.php" hash="613f3cd3a2a43731561c50fad6859e04"/></dir><dir name="Model"><file name="PaymentMethod.php" hash="d2a14fc175949e534646c43f49fd6184"/></dir><dir name="etc"><file name="config.xml" hash="f68d838928a38fee30337e556a442a1b"/><file name="system.xml" hash="a7aef3dc412c83d7fd6ab6308983a334"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="bitcredits_bitcoinpayform.xml" hash="9494781d4e4b98bc13592c5ab40b25f8"/></dir><dir name="template"><dir name="bitcredits_bitcoinpayform"><file name="form.phtml" hash="ad330d110b5e6990efb784ae454a1b43"/><file name="widget.phtml" hash="519b05aa2614a433aad220f26b8a1823"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="BitCredits_BitcoinPayform.xml" hash="7067a98cfdd1b88f2c5f657ed0c05d57"/></dir></target></contents>
+    <time>19:51:37</time>
+    <contents><target name="magecommunity"><dir name="BitCredits"><dir name="BitcoinPayform"><dir name="Block"><file name="Form.php" hash="063a3650c3de39e13ea373c4fa85d480"/><file name="Widget.php" hash="613f3cd3a2a43731561c50fad6859e04"/></dir><dir name="Model"><file name="PaymentMethod.php" hash="d2a14fc175949e534646c43f49fd6184"/></dir><dir name="etc"><file name="config.xml" hash="1745287e03b36a7ff287aa0376676ca3"/><file name="system.xml" hash="a7aef3dc412c83d7fd6ab6308983a334"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="bitcredits_bitcoinpayform.xml" hash="9494781d4e4b98bc13592c5ab40b25f8"/></dir><dir name="template"><dir name="bitcredits_bitcoinpayform"><file name="form.phtml" hash="7d0d6c94ce4a47e2296d73cc8d0d845b"/><file name="widget.phtml" hash="519b05aa2614a433aad220f26b8a1823"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="BitCredits_BitcoinPayform.xml" hash="7067a98cfdd1b88f2c5f657ed0c05d57"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>5.9.0</max></php></required></dependencies>
 </package>

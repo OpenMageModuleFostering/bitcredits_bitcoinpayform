@@ -58,7 +58,7 @@
             <bitcredits_bitcoinpayform>
                 <active>1</active>
                 <model>bitcredits_bitcoinpayform/paymentMethod</model>
-                <title>Bitcoins through BitCredits.io</title>
+                <title>Bitcoin with BitCredits</title>
                 <api_key></api_key>
                 <api_endpoint>https://api.bitcredits.io</api_endpoint>
                 <payment_action>authorize</payment_action>
