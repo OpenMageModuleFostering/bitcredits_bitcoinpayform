@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <BitCredits_BitcoinPayform>
+            <active>true</active>
+            <codePool>community</codePool>
+			<depends>
+				<Mage_Payment />
+			</depends>
+        </BitCredits_BitcoinPayform>
+    </modules>
+</config>

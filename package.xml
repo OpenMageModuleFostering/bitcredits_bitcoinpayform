@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>BitCredits_BitcoinPayForm</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT">MIT License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Accept Bitcoins on your store</summary>
+    <description>BitCredits.io allows your store to offer bitcoins as a payment option, while never having to hold them yourself. We take care of the legalities related to crypto-currencies.</description>
+    <notes>Added some information begin automatically sent</notes>
+    <authors><author><name>BitCredits.io</name><user>bitcredits</user><email>admin@bitcredits.io</email></author></authors>
+    <date>2014-03-17</date>
+    <time>18:46:37</time>
+    <contents><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="bitcredits_bitcoinpayform.xml" hash="9494781d4e4b98bc13592c5ab40b25f8"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="BitCredits_BitcoinPayform.xml" hash="7067a98cfdd1b88f2c5f657ed0c05d57"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.9.0</max></php></required></dependencies>
+</package>
