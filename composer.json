@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/BitCredits_BitcoinPayForm",
+    "name": "OpenMageModuleFostering\/BitCredits_BitcoinPayForm",
     "type": "magento-module",
     "license": "MIT-License",
     "homepage": "",
     "description": "Accept Bitcoins on your store",
     "authors": [
-    {
-        "name": "BitCredits.io",
-        "email": "admin@bitcredits.io"
-    }
-],
+        {
+            "name": "BitCredits.io",
+            "email": "admin@bitcredits.io"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
